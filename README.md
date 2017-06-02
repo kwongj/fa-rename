@@ -13,7 +13,7 @@ Jason Kwong (@kwongjc)
 
 ```
 usage: 
-  fa-rename.py [--tab new_names.txt] FASTA > new.fasta
+  fa-rename.py [--ids new_names.txt] FASTA > new.fasta
 
 Rename headers/sequence IDs in multi-FASTA file
 
@@ -22,7 +22,7 @@ positional arguments:
 
 optional arguments:
   -h, --help  show this help message and exit
-  --ids FILE  specify tab-separated file with [oldnames] [newnames]
+  --ids FILE  specify two column tab-separated file with [oldnames] [newnames]
   --out FILE  specify output file (default = stdout)
   --version   show program's version number and exit
 ```

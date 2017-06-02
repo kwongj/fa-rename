@@ -20,9 +20,9 @@ def tab2dict(tab, sep):
 parser = argparse.ArgumentParser(
 	formatter_class=RawTextHelpFormatter,
 	description='Rename headers/sequence IDs in multi-FASTA file\n',
-	usage='\n  %(prog)s [--tab new_names.txt] FASTA > new.fasta')
+	usage='\n  %(prog)s [--ids new_names.txt] FASTA > new.fasta')
 parser.add_argument('fasta', metavar='FASTA', nargs=1, help='original FASTA file')
-parser.add_argument('--ids', metavar='FILE', required=True, nargs=1, help='specify tab-separated file with [oldnames] [newnames]')
+parser.add_argument('--ids', metavar='FILE', required=True, nargs=1, help='specify two column tab-separated file with [oldnames] [newnames]')
 parser.add_argument('--out', metavar='FILE', help='specify output file (default = stdout)')
 parser.add_argument('--version', action='version', version='%(prog)s v0.1')
 args = parser.parse_args()
