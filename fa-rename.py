@@ -81,7 +81,7 @@ if args.out:
 	msg('Masked sequences saved to "{}" ... '.format(args.out[0]))
 	SeqIO.write(newseqs, args.out[0], 'fasta')
 else:
-	seqFILE = StringIO.StringIO()
+	seqFILE = StringIO()
 	SeqIO.write(newseqs, seqFILE, 'fasta')
 	output = seqFILE.getvalue().rstrip()
 	print(output)
