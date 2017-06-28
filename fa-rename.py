@@ -36,7 +36,7 @@ def check_fasta(f):
 			line = line.strip()
 			if not line or line[0] == '>':	
 				continue
-			if bool(re.search('[^ACTGactgNn\-]', line)):	# Check if there are non-nucleotide characters in sequence
+			if bool(re.search('[^ACTGactgNn?\-]', line)):	# Check if there are non-nucleotide characters in sequence
 				return False
 	return True
 
